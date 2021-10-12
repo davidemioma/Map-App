@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapty // Map your workouts</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img class="logo" src="./images/logo.png" alt="" />
+
+      <ul class="workouts">
+        <form class="form hidden">
+          <div class="form_row">
+            <label class="form_label">Type</label>
+            <select class="form_input form_input-type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+
+          <div class="form_row">
+            <label class="form_label">Distance</label>
+            <input class="form_input form_input-distance" placeholder="km" />
+          </div>
+
+          <div class="form_row">
+            <label class="form_label">Duration</label>
+            <input class="form_input form_input-duration" placeholder="min" />
+          </div>
+
+          <div class="form_row">
+            <label class="form_label">Cadence</label>
+            <input
+              class="form_input form_input-cadence"
+              placeholder="step/min"
+            />
+          </div>
+
+          <div class="form_row form_row-hidden">
+            <label class="form_label">Elev Gain</label>
+            <input
+              class="form_input form_input-elevation"
+              placeholder="meters"
+            />
+          </div>
+
+          <button class="form_btn">OK</button>
+        </form>
+
+        <!-- <li class="workout workout-running" data-id="1234567890">
+          <h2 class="workout_title">Running on April 14</h2>
+
+          <div class="workout_details">
+            <span class="workout_icon">🏃‍♂️</span>
+            <span class="workout_value">5.2</span>
+            <span class="workout_unit">km</span>
+          </div>
+
+          <div class="workout_details">
+            <span class="workout_icon">⏱</span>
+            <span class="workout_value">24</span>
+            <span class="workout_unit">min</span>
+          </div>
+
+          <div class="workout__details">
+            <span class="workout_icon">⚡️</span>
+            <span class="workout_value">4.6</span>
+            <span class="workout_unit">min/km</span>
+          </div>
+
+          <div class="workout__details">
+            <span class="workout_icon">🦶🏼</span>
+            <span class="workout_value">178</span>
+            <span class="workout_unit">spm</span>
+          </div>
+        </li>
+
+        <li class="workout workout-cycling" data-id="1234567891">
+          <h2 class="workout_title">Cycling on April 5</h2>
+
+          <div class="workout_details">
+            <span class="workout_icon">🚴‍♀️</span>
+            <span class="workout_value">27</span>
+            <span class="workout_unit">km</span>
+          </div>
+
+          <div class="workout_details">
+            <span class="workout_icon">⏱</span>
+            <span class="workout_value">95</span>
+            <span class="workout_unit">min</span>
+          </div>
+
+          <div class="workout__details">
+            <span class="workout_icon">⚡️</span>
+            <span class="workout_value">16</span>
+            <span class="workout_unit">km/hr</span>
+          </div>
+
+          <div class="workout__details">
+            <span class="workout_icon">⛰</span>
+            <span class="workout_value">223</span>
+            <span class="workout_unit">m</span>
+          </div>
+        </li> -->
+      </ul>
+
+      <p class="copyright">
+        &copy; Copyright by
+        <a
+          class="twitter_link"
+          target="_blank"
+          href="https://gmail.com/davidemiomauche"
+          >David Emioma</a
+        >. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own.
+      </p>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
